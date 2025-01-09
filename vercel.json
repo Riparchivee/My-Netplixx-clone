@@ -3,7 +3,10 @@
   "builds": [
     {
       "src": "backend/server.js",
-      "use": "@vercel/node"
+      "use": "@vercel/node",
+      "config": {
+        "startCommand": "npm run start"
+      }
     },
     {
       "src": "frontend/package.json",
